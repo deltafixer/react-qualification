@@ -1,0 +1,37 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+
+  > * {
+    margin-bottom: 12px;
+  }
+
+  > input {
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .number-of-results {
+    font-weight: bold;
+  }
+
+  .repos-container {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      margin-bottom: 3px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.loading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
