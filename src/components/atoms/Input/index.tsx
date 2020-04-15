@@ -1,4 +1,5 @@
 import React from "react";
+import { StyledInput } from "./index.styles";
 
 type InputProps = {
   type: string;
@@ -14,7 +15,7 @@ const Input = ({
   onChange,
 }: InputProps): JSX.Element => {
   return (
-    <input
+    <StyledInput
       type={type}
       autoFocus={autoFocus}
       placeholder={placeholder}

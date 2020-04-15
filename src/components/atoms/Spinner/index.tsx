@@ -1,4 +1,5 @@
 import React from "react";
+import { SpinnerStyleWrapper } from "./index.styles";
 
 type SpinnerProps = {
   text: string;
@@ -6,10 +7,10 @@ type SpinnerProps = {
 
 const Spinner = ({ text }: SpinnerProps): JSX.Element => {
   return (
-    <React.Fragment>
+    <SpinnerStyleWrapper>
       <div className="loader"></div>
       <div className="loading">{text}</div>
-    </React.Fragment>
+    </SpinnerStyleWrapper>
   );
 };
 

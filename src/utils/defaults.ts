@@ -9,7 +9,7 @@ export const debounce = (func: any, wait: number, isImmediate = false) => {
     };
     const callNow = isImmediate && !timeout;
     clearTimeout(timeout as number);
-    (timeout as NodeJS.Timeout) = setTimeout(later, wait);
+    timeout = setTimeout(later, wait);
     if (callNow) {
       func(...args);
     }

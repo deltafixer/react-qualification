@@ -1,12 +1,12 @@
-.items-container {
+import styled from "styled-components";
+
+export const ListStyleWrapper = styled.div`
   display: flex;
   flex-direction: column;
 
   div {
-    margin-bottom: 3px;
-
     &:last-of-type {
       margin-bottom: 0;
     }
   }
-}
+`;

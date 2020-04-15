@@ -3,6 +3,7 @@ import { IGitHubRepo } from "../../../models/IGitHubRepo";
 import { fetchMyRepos } from "../../../utils/api";
 import { debounce } from "../../../utils/defaults";
 import { Spinner, Input, List } from "../..";
+import { ReposStyleWrapper } from "./index.styles";
 
 const Repos = (): JSX.Element => {
   const [repos, setRepos] = useState([] as IGitHubRepo[]);
@@ -25,7 +26,7 @@ const Repos = (): JSX.Element => {
   return loading ? (
     <Spinner text={"Loading repositories..."} />
   ) : (
-    <React.Fragment>
+    <ReposStyleWrapper>
       <Input
         type="text"
         autoFocus
@@ -35,7 +36,7 @@ const Repos = (): JSX.Element => {
       <List items={repos} itemFilter={searchString} resultCount={setCount} />
       {/* still playing with this div below :D */}
       <div className="number-of-results">Number of results:&nbsp;{count}</div>
-    </React.Fragment>
+    </ReposStyleWrapper>
   );
 };
 
