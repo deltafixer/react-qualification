@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Input Autofocused 1`] = `
+<input
+  autoFocus={true}
+  className="sc-AxjAm fSyhvc"
+  onChange={[Function]}
+  placeholder=""
+  type="text"
+/>
+`;
+
+exports[`Storyshots Input Default 1`] = `
+<input
+  autoFocus={false}
+  className="sc-AxjAm fSyhvc"
+  onChange={[Function]}
+  placeholder=""
+  type="text"
+/>
+`;
+
+exports[`Storyshots Input With Custom Placeholder 1`] = `
+<input
+  autoFocus={false}
+  className="sc-AxjAm fSyhvc"
+  onChange={[Function]}
+  placeholder="Custom text"
+  type="text"
+/>
+`;
+
+exports[`Storyshots List Default And Sorted 1`] = `
+<div
+  style={
+    Object {
+      "background": "white",
+      "margin": "auto",
+      "width": "100%",
+    }
+  }
+>
+  <ul
+    className="sc-AxhCb kNeHPs"
+  >
+    <li
+      className="sc-AxiKw dDHeKQ"
+    >
+      <img
+        alt=""
+        src="https://avatars3.githubusercontent.com/u/69631?v=4"
+      />
+      <span>
+        Item 3
+      </span>
+      <div
+        className="dates"
+      >
+        <span>
+          Created at: 
+          2019-4-10 0:00:00
+        </span>
+        <span>
+          Updated at: 
+          2020-1-15 0:00:00
+        </span>
+      </div>
+    </li>
+    <li
+      className="sc-AxiKw dDHeKQ"
+    >
+      <img
+        alt=""
+        src="https://avatars3.githubusercontent.com/u/69631?v=4"
+      />
+      <span>
+        Item 2
+      </span>
+      <div
+        className="dates"
+      >
+        <span>
+          Created at: 
+          2019-4-10 0:00:00
+        </span>
+        <span>
+          Updated at: 
+          2020-1-12 0:00:00
+        </span>
+      </div>
+    </li>
+    <li
+      className="sc-AxiKw dDHeKQ"
+    >
+      <img
+        alt=""
+        src="https://avatars3.githubusercontent.com/u/69631?v=4"
+      />
+      <span>
+        Item 1
+      </span>
+      <div
+        className="dates"
+      >
+        <span>
+          Created at: 
+          2019-4-10 0:00:00
+        </span>
+        <span>
+          Updated at: 
+          2020-1-10 0:00:00
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots List With Filter 1`] = `
+<div
+  style={
+    Object {
+      "background": "white",
+      "margin": "auto",
+      "width": "100%",
+    }
+  }
+>
+  <ul
+    className="sc-AxhCb kNeHPs"
+  >
+    <li
+      className="sc-AxiKw dDHeKQ"
+    >
+      <img
+        alt=""
+        src="https://avatars3.githubusercontent.com/u/69631?v=4"
+      />
+      <span>
+        Item 3
+      </span>
+      <div
+        className="dates"
+      >
+        <span>
+          Created at: 
+          2019-4-10 0:00:00
+        </span>
+        <span>
+          Updated at: 
+          2020-1-15 0:00:00
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots ListItem Default 1`] = `
+<div
+  style={
+    Object {
+      "background": "white",
+      "margin": "auto",
+      "width": "100%",
+    }
+  }
+>
+  <li
+    className="sc-AxiKw dDHeKQ"
+  >
+    <img
+      alt=""
+      src="https://avatars3.githubusercontent.com/u/69631?v=4"
+    />
+    <span>
+      Random name
+    </span>
+    <div
+      className="dates"
+    >
+      <span>
+        Created at: 
+        2020-4-16 15:43:24
+      </span>
+      <span>
+        Updated at: 
+        2020-4-16 15:43:24
+      </span>
+    </div>
+  </li>
+</div>
+`;
+
+exports[`Storyshots Repos Default 1`] = `
+<div
+  style={
+    Object {
+      "background": "white",
+      "margin": "auto",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="sc-AxirZ gMWsVi"
+  >
+    <div
+      className="loader"
+    />
+    <div
+      className="loading"
+    >
+      Loading repositories...
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Spinner Default 1`] = `
+<div
+  style={
+    Object {
+      "background": "white",
+      "margin": "auto",
+      "width": "fit-content",
+    }
+  }
+>
+  <div
+    className="sc-AxirZ gMWsVi"
+  >
+    <div
+      className="loader"
+    />
+    <div
+      className="loading"
+    >
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Spinner With Text 1`] = `
+<div
+  style={
+    Object {
+      "background": "white",
+      "margin": "auto",
+      "width": "fit-content",
+    }
+  }
+>
+  <div
+    className="sc-AxirZ gMWsVi"
+  >
+    <div
+      className="loader"
+    />
+    <div
+      className="loading"
+    >
+      Loading
+    </div>
+  </div>
+</div>
+`;

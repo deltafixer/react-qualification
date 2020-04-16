@@ -40,9 +40,4 @@ const Repos = (): JSX.Element => {
   );
 };
 
-Repos.defaultProps = {
-  text: "",
-  resultCount: () => {},
-};
-
 export default Repos;

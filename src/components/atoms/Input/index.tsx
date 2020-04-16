@@ -27,7 +27,7 @@ const Input = ({
 Input.defaultProps = {
   type: "text",
   autoFocus: false,
-  placeholder: "aaa",
+  placeholder: "",
   onChange: null,
 };
 

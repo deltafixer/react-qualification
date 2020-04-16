@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import ListItem from "../../molecules/ListItem";
 import { ListStyleWrapper } from "./index.styles";
 
-type ListProps = {
+export type ListProps = {
   items: any[];
   itemFilter: string;
   resultCount: Function;
@@ -49,8 +49,9 @@ const List = ({ items, itemFilter, resultCount }: ListProps): JSX.Element => {
 };
 
 List.defaultProps = {
-  text: "",
-  resultCount: () => {},
+  items: [],
+  itemFilter: "string",
+  resultCount: null,
 };
 
 export default List;

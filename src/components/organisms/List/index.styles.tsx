@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
-export const ListStyleWrapper = styled.div`
+export const ListStyleWrapper = styled.ul`
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 
-  div {
+  li {
     &:last-of-type {
       margin-bottom: 0;
     }

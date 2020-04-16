@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledListItem } from "./index.styles";
 
-type ListItemProps = {
+export type ListItemProps = {
   name: string;
   avatar_url: string;
   created_at: string;
