@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component tests renders correctly 1`] = `
+"<Repos>
+  <Spinner text=\\"Loading repositories...\\">
+    <styled.div>
+      <div className=\\"sc-AxirZ gMWsVi\\">
+        <div className=\\"loader\\" />
+        <div className=\\"loading\\">
+          Loading repositories...
+        </div>
+      </div>
+    </styled.div>
+  </Spinner>
+</Repos>"
+`;

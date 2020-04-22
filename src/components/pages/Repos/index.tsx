@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { IGitHubRepo } from "../../../models/IGitHubRepo";
 import { fetchMyRepos } from "../../../utils/api";
 import { debounce } from "../../../utils/defaults";
@@ -8,13 +8,13 @@ import { ReposStyleWrapper } from "./index.styles";
 const Repos = (): JSX.Element => {
   const [repos, setRepos] = useState([] as IGitHubRepo[]);
   const [searchString, setSearchString] = useState("");
-  const [loading, setLoading] = useState(true);
   const [count, setCount] = useState(0);
+  const loading = useRef(true);
 
   useEffect(() => {
     fetchMyRepos().then((fetchedRepos) => {
+      loading.current = false;
       setRepos(fetchedRepos);
-      setLoading(false);
     });
   }, []);
 
@@ -23,7 +23,7 @@ const Repos = (): JSX.Element => {
     setSearchString(value);
   }, 400);
 
-  return loading ? (
+  return loading.current ? (
     <Spinner text={"Loading repositories..."} />
   ) : (
     <ReposStyleWrapper>

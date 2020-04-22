@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component tests renders correctly 1`] = `
+"<styled.li>
+  <img src=\\"https://avatars3.githubusercontent.com/u/69631?v=4\\" alt=\\"\\" />
+  <span>
+    Random name
+  </span>
+  <div className=\\"dates\\">
+    <span>
+      Created at: 
+      Invalid Date
+    </span>
+    <span>
+      Updated at: 
+      Invalid Date
+    </span>
+  </div>
+</styled.li>"
+`;

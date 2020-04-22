@@ -4,27 +4,31 @@
   "private": true,
   "dependencies": {
     "@storybook/addon-docs": "^5.3.18",
-    "@storybook/addon-storyshots": "^5.3.18",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "^24.9.1",
-    "@types/node": "^12.12.35",
+    "@types/node": "^12.12.37",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
     "@types/styled-components": "^5.1.0",
-    "node-sass": "^4.13.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^25.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "react-test-renderer": "^16.13.1",
     "styled-components": "^5.1.0",
-    "typescript": "^3.7.5"
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --verbose",
+    "test:coverage": "jest --verbose --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public --ci",
     "build-storybook": "build-storybook -s public"
@@ -50,5 +54,25 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./src/setupTests.ts"
+    ],
+    "preset": "ts-jest/presets/js-with-ts",
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/*.stories.tsx",
+      "!coverage/**",
+      "!node_modules/**",
+      "!src/index.tsx",
+      "!src/serviceWorker.ts",
+      "!*babel*",
+      "!src/setupTests.ts",
+      "!public/**",
+      "!build/**",
+      "!src/**/routes/index.ts",
+      "!src/utils/*.ts"
+    ]
   }
 }

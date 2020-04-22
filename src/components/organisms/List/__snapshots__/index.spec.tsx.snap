@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component tests renders correctly 1`] = `
+"<List items={{...}} itemFilter=\\"name\\" resultCount={[Function: mockConstructor]}>
+  <styled.ul>
+    <ul className=\\"sc-AxjAm bbeNOP\\">
+      <Component name=\\"name2\\" avatar_url=\\"\\" created_at=\\"2020-01-01\\" updated_at=\\"2020-01-03\\">
+        <div />
+      </Component>
+      <Component name=\\"name3\\" avatar_url=\\"\\" created_at=\\"2020-01-01\\" updated_at=\\"2020-01-02\\">
+        <div />
+      </Component>
+      <Component name=\\"name1\\" avatar_url=\\"\\" created_at=\\"2020-01-01\\" updated_at=\\"2020-01-01\\">
+        <div />
+      </Component>
+    </ul>
+  </styled.ul>
+</List>"
+`;
